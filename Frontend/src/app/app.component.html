@@ -13,6 +13,7 @@
     <ul class="navbar-nav navbar-right">
         <a class="nav-link"  routerLink="/login" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Login</a>
         <a class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()" (click)="loggedUser()">Add Product</a>
+        <!-- <a routerLink="/search">search</a> -->
         <a class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()" (click)="logoutUser()">Logout</a>
     </ul>
   </div>

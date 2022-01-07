@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component'
 import { NewProductComponent } from './newproduct/newproduct.component';
 import {LoginComponent} from './login/login.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
+import { SearchComponent } from './search/search.component';
 const routes: Routes = [
   {
     path: '',
@@ -24,7 +25,8 @@ const routes: Routes = [
   canActivate: [AuthGuard],
   component: NewProductComponent,
 },
-{path: 'update', component:UpdateProductComponent}
+{path: 'update', component:UpdateProductComponent},
+{path:'search',component:SearchComponent}
 ];
 
 @NgModule({

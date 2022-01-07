@@ -12,7 +12,8 @@ import {AuthService} from './auth.service';
 import {AuthGuard} from './auth.guard';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { UpdateProductComponent } from './update-product/update-product.component';
-// import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchComponent } from './search/search.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UpdateProductComponent } from './update-product/update-product.componen
     ProductsComponent,
     NewProductComponent,
     LoginComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
